@@ -1,0 +1,188 @@
+
+html,body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#usslogin { 
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+  }
+.stretch {
+    width:100%;
+    height:100%;
+     
+}
+.overlay {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    z-index: 2; 
+    background-color: rgba(255, 255, 255, 0.50);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form input[type=submit] {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  .form input[type=submit]:hover, .form input[type=submit]:active, .form input[type=submit]:focus {
+    background: #43A047;
+  }
+  .form .register-form {
+    display: none;
+  }
+  body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }
+
+
+ 
+  .map-view {
+    height: 84vh;
+    background-color: #f0f7f4;
+    display: flex;
+    flex-direction: row;
+  }
+  .map-list {
+      width: 24.2vw;
+      min-height : 100%;
+      background-color: #F2F2F2;
+      border-right: 1px solid black;
+      overflow-y: scroll;
+  }
+  .map-list::-webkit-scrollbar { 
+    display: none; 
+}
+
+  .map-content {
+      width: 85.8vw;
+      height: 100%;
+      background-color: #FFFFFF;
+  }
+  .map-tooltip {
+	width: 145px;
+	padding: 5px;
+	border: 1px solid gray;
+	font-size: 9pt;
+	font-family: Verdana;
+	background-color: #fff;
+	color: #000;
+  }
+  .map-list .list-group-item {
+      height: 24vh;
+      padding: 0 !important;
+      background-color: #DEF2F1;
+      border-radius: 0;
+      border: solid 1px black;
+      color: #17252A;
+      /* display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row; */
+  }
+  .map-list .list-group-item .map-list-item-main {
+      float: left;
+      height: 24vh;
+      width: 55%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .map-list .list-group-item .map-list-item-main img {
+      width: 6vw;
+      height: 6vw;
+      margin-top: 2vh;
+  }
+  .map-list .list-group-item .map-list-item-main p {
+     margin-top: 2vh;
+  }
+  .map-list .list-group-item .map-list-item-serv {
+    width: 45%;
+    height: 24vh;
+    float:right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.map-list .list-group-item .map-list-item-serv p {
+    margin-top: 2vh;
+    padding-right: 2vw;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.ussbody-two {
+    min-height: 84vh;
+    background-color: #F8FFFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

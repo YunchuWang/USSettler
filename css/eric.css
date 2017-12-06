@@ -1,0 +1,131 @@
+
+h1, h2 {
+	text-align: center;
+	color: #658585;
+}
+
+.container {
+	zoom: 1;
+}
+.username, .bio {
+	color: #658585;
+	font-weight: 500;
+}
+.container:before, .container:after {
+	content: "";
+	display: table;
+}
+.info {
+	background-color: white;
+	border-radius: 10vw;
+}
+ul {
+	text-align: left;
+	padding-left: 10vw;
+	list-style-type: none;
+	font-weight: 500;
+}
+.container:after {
+	clear: both;
+}
+.accountitem {
+	padding-bottom: 0.6vh;
+}
+#uss-jointeam-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 39vh;
+    width: 100vw;
+}
+.breadcrumb-item {
+    font-size: 28px;
+}
+.account-card-block {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.account-card-profile {
+    width: 30vw;
+    height: 70vh;
+    background-color: #CCEA8D;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.account-card-profile-avatar img {
+    margin-top: 5vh;
+    max-width: 75%;
+    max-height: 75%;
+}
+.account-card-information {
+    width: 70vw;
+    height: 70vh;
+    background-color: cornsilk;
+    display: flex;
+    
+    border: 1px solid black;
+}
+.account-card-profile-avatar {
+    margin-top: 1vw;
+    width: 20vw;
+    min-height: 26vh;
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 1vw;
+}
+
+.account-card-profile-activity {
+    margin-top: 1vw;
+    width: 30vw;
+    min-height: 27vh;
+    max-height: 36vh;
+    background-color: #C1BABA;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1.5vh;
+    padding-bottom: 1vw;
+    border: 1px solid black;
+}
+.account-card-profile-activity > * {
+    margin-left: 4vw;
+}
+.account-card-information .card {
+    width: 70vw;
+    border: none;
+    border-radius: 0;
+    max-height: 70vh;
+}
+.account-card-information .card .list-group > .list-group-item {
+    min-height: 15vh;
+    border: none;
+    border-radius: 0;
+}
+.account-card-information .card .list-group > .list-group-item h3:after
+{
+    margin-top: 5px;
+    content:' ';
+    display: block;
+    border-top:1px solid #9C9797;
+    
+}
+.account-card-information .card .list-group > .list-group-item .card .card-text {
+    padding-top: 1vh;
+    padding-left: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
