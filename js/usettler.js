@@ -183,3 +183,23 @@ $(document).ready(function () {
     }
 
 });
+ function submitForm() {
+    event.preventDefault();
+    var x = document.forms["search-form"]["location"].value;
+    if (x == "") {
+        var searchalert = document.getElementById("search-alert");
+        searchalert.style.display = '';
+    } else {
+        location.href = 'mapview.html';
+    }
+};
+function typeForm() {
+    event.preventDefault();
+    var x = document.forms["search-form"]["location"].value;
+    var searchalert = document.getElementById("search-alert");
+    if (x == "") {
+        searchalert.style.display = '';
+    } else {
+        searchalert.style.display = 'none';
+    }
+}

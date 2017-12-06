@@ -23,16 +23,35 @@
             <div id="ussnav" class="col-12 col-md-12 nopadding">
                 <ul>
                     <li><a href="index.html"><img src="img/ussettler.png" /></a></li>
+                    <li id="searchbar-nav">
+                        <form class="input-group" name="search-form" onsubmit="submitForm()">
+                            <input type="text" class="form-control" name="location" onkeyup="typeForm()" autofocus="autofocus" placeholder="Type your moving in address to start a search">
+                            <span class="input-group-addon" style="display: none;">
+                                        <button type="button">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </span>
+                        </form>
+
+                    </li>
                     <li id="nav-spacer"></li>
                     <li id="profile-section">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body hvr-fade">
+                                <a href="accountview.html">
                                 <img src="img/profileimg.png" style="margin-right: .5vw;" />
                                 <span>Tom Cat</span>
+                                    </a>
                             </div>
                         </div>
                     </li>
-                    <li><button class="btn btn-light"><a href="login.html" style="text-decoration: none; color: #423D3D;"><i class="fa fa-cog" aria-hidden="true"></a></i></button></li>
+                    <li>
+                        <a href="login.html" style="text-decoration: none; color: #423D3D;">
+                                <button class="btn btn-light">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </button>
+                            </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -41,11 +60,11 @@
 
                 <div id="usssocialicons">
                     <ul>
-                        <i class="fa fa-weixin fa-2x" aria-hidden="true"></i>
-                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-weixin fa-2x" style="color: #7bb32e;" aria-hidden="true"></i></a>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-facebook-square fa-2x" style="color: #3b5998;" aria-hidden="true"></i></a>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-linkedin-square fa-2x" style="color: #cd486b;" aria-hidden="true"></i></a>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-twitter-square fa-2x"  style="color: #1dcaff;"aria-hidden="true"></i></a>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-instagram fa-2x" style="color: #0077B5;" aria-hidden="true"></i></a>
                     </ul>
                 </div>
                 <div id="contactform" class="nopadding">
@@ -114,7 +133,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-    <script src="js/ussettler.js"></script>
+    <script src="js/usettler.js"></script>
     <script src="https://use.fontawesome.com/fb33c896ee.js"></script>
 </body>
 

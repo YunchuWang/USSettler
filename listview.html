@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/ussettler.css">
+    <link rel="stylesheet" type="text/css" href="css/brendan.css">
     <link rel="stylesheet" type="text/css" href="css/lj.css">
 
 </head>
@@ -21,40 +22,48 @@
                 <ul>
                     <li><a href="index.html"><img src="img/ussettler.png" /></a></li>
                     <li id="searchbar-nav">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Type your moving in address to start a search">
-                            <span class="input-group-addon">
-                                                <button type="submit">
-                                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                                </button>
-                                            </span>
-                        </div>
+                        <form class="input-group" name="search-form" onsubmit="submitForm()">
+                            <input type="text" class="form-control" name="location" onkeyup="typeForm()" autofocus="autofocus" placeholder="Type your moving in address to start a search">
+                            <span class="input-group-addon" style="display: none;">
+                                        <button type="button">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </span>
+                        </form>
                     </li>
                     <li id="nav-spacer"></li>
                     <li id="nav-switch">
                         <div class="btn-group" role="group" aria-label="...">
                             <button type="button" class="btn btn-default"><a href="mapview.html">Map</a></button>
-                            <button type="button" class="btn btn-default"><a href="listview.html">List</a></button>
+                            <button type="button" class="btn btn-default tab-active"><a href="listview.html">List</a></button>
                         </div>
                     </li>
                     <li id="socialicons-nav">
                         <ul>
-                            <i class="fa fa-weixin fa-2x" aria-hidden="true"></i>
-                            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-                            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                            <a href="#" class="hvr-pulse"><i class="fa fa-weixin fa-2x" style="color: #7bb32e;" aria-hidden="true"></i></a>
+                            <a href="#" class="hvr-pulse"><i class="fa fa-facebook-square fa-2x" style="color: #3b5998;" aria-hidden="true"></i></a>
+                            <a href="#" class="hvr-pulse"><i class="fa fa-linkedin-square fa-2x" style="color: #cd486b;" aria-hidden="true"></i></a>
+                            <a href="#" class="hvr-pulse"><i class="fa fa-twitter-square fa-2x"  style="color: #1dcaff;"aria-hidden="true"></i></a>
+                            <a href="#" class="hvr-pulse"><i class="fa fa-instagram fa-2x" style="color: #0077B5;" aria-hidden="true"></i></a>
                         </ul>
                     </li>
                     <li id="profile-section">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body hvr-fade">
+                                <a href="accountview.html">
                                 <img src="img/profileimg.png" style="margin-right: .5vw;" />
                                 <span>Tom Cat</span>
+                                    </a>
                             </div>
                         </div>
                     </li>
-                    <li><button class="btn btn-light"><a href="login.html" style="text-decoration: none; color: #423D3D;"><i class="fa fa-cog" aria-hidden="true"></a></i></button></li>
+                    <li>
+                        <a href="login.html" style="text-decoration: none; color: #423D3D;">
+                                <button class="btn btn-light">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </button>
+                            </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -62,148 +71,153 @@
             <div class="container-fluid">
                 <div class="main-list">
                     <div class="grouping">
-                        <div class="item">
-                            <div class="item-pic">
-                                <img src="img/a2.svg" class="img-circle" />
-                            </div>
-                            <div class="item-desc">
-
-                                <p><b>Team A</b><br>Main services:<br>
-                                    <div class="soc">flight pickup, hosting translation <br> phone, utility, SSN translation <br> phone, utility,
-                                        SSN translation </div>
-                                </p>
-
-                            </div>
-
-                            <button id="modBt" class="buttonFloat"> Quick RSVP</button>
-
-                            <div id="myMod" class="modal">
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <p><br>Reserve your team
-                                        <br><br> First Name: <input type="text" name="firstname"> Last Name: <input type="text"
-                                            name="lastname"><br><br> Email: <input type="text" name="email"> Phone Number:
-                                        <input type="text" name="number"><br><br>Service Requested: <select name="services"><option value="pickup">Flight Pickup</option><option value="hosting">Hosting</option><option value="translation">Translation</option><option value="other">Other</option></select>Location:
-                                        <select name="location">
-                                                <option value="durham">Durham</option>
-                                                <option value="raleigh">Raleigh</option>
-                                                <option value="chapel">Chapel Hill</option>
-                                                <option value="other">Other</option>
-                                                </select>
-                                        <br><br> From: <select name="time1"><option value="one">1 PM</option><option value="two">2 PM</option><option value="three">3 PM</option><option value="four">4 PM</option></select>                                        To: <select name="time2"><option value="one">1 PM</option><option value="two">2 PM</option><option value="three">3 PM</option><option value="four">4 PM</option></select>
-                                        <br><br> <textarea name="message" rows="10" cols="30">Type any additional notes here.</textarea><br><br>Once
-                                        this reservation has been submitted, you will be contacted within 1-2 business days
-                                        by email about service availability.<br><br><input type="submit" class="buttonFloat"></p>
-
+                        <div class="row list-item-border">
+                            <a href="detailview.html">
+                                <div class="col detail-profile-item">
+                                    <img src="img/a2.svg" />
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-pic">
-                                <img src="img/a3.svg" class="img-circle" />
-                            </div>
-                            <div class="item-desc">
-                                <p><b>Team B</b><br>Main services:<br>
-                                    <div class="soc">flight pickup, hosting translation <br> phone, utility, SSN translation <br> phone, utility,
-                                        SSN translation </div>
+                            </a>
+                            <div class="col detail-profile-item-text">
+                                <h3 style="margin-bottom: 4vh;margin-top: -8vh;">Team A</h3>
+                                <span style="font-size: 18px;">Main service:</span>
+                                <p class="break-word text-indent">
+                                    flight pickup, hosting ,phone, translation
                                 </p>
-
-                                <button id="modBt2" class="buttonFloat"> Quick RSVP</button>
-
-                                <div id="myMod2" class="modal">
-
-                                    <div class="modal-content">
-                                        <span class="close2">&times;</span>
-                                        <p><br>Reserve your team
-                                            <br><br> First Name: <input type="text" name="firstname"> Last Name: <input type="text"
-                                                name="lastname"><br><br> Email: <input type="text" name="email"> Phone Number:
-                                            <input type="text" name="number"><br><br>Service Requested: <select name="services"><option value="pickup">Flight Pickup</option><option value="hosting">Hosting</option><option value="translation">Translation</option><option value="other">Other</option></select>Location:
-                                            <select name="location">
-                                                <option value="durham">Durham</option>
-                                                <option value="raleigh">Raleigh</option>
-                                                <option value="chapel">Chapel Hill</option>
-                                                <option value="other">Other</option>
-                                                </select>
-                                            <br><br> From: <select name="time1"><option value="one">1 PM</option><option value="two">2 PM</option><option value="three">3 PM</option><option value="four">4 PM</option></select>                                            To: <select name="time2"><option value="one">1 PM</option><option value="two">2 PM</option><option value="three">3 PM</option><option value="four">4 PM</option></select>
-                                            <br><br> <textarea name="message" rows="10" cols="30">Type any additional notes here.</textarea><br><br>Once
-                                            this reservation has been submitted, you will be contacted within 1-2 business
-                                            days by email about service availability.<br><br><input type="submit" class="buttonFloat"></p>
-
-                                    </div>
-                                </div>
-
                             </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="item-pic">
-                                <img src="img/a4.svg" class="img-circle" />
-
-                            </div>
-                            <div class="item-desc">
-                                <p><b>Team C</b><br>Main services:<br>
-                                    <div class="soc">flight pickup, hosting translation <br> phone, utility, SSN translation <br> phone, utility,
-                                        SSN translation </div>
+                            <div class="col detail-profile-item-text">
+                                <span style="font-size: 18px;margin-top: 7vh;">Main areas:</span>
+                                <p class="break-word text-indent">
+                                    Cary, Raleigh, Durham, RTP
                                 </p>
-
-                                <button id="modBt3" class="buttonFloat"> Quick RSVP</button>
-
-                                <div id="myMod3" class="modal">
-                                    <div class="modal-content">
-                                        <span class="close3">&times;</span>
-                                        <p><br>Reserve your team
-                                            <br><br> First Name: <input type="text" name="firstname"> Last Name: <input type="text"
-                                                name="lastname"><br><br> Email: <input type="text" name="email"> Phone Number:
-                                            <input type="text" name="number"><br><br>Service Requested: <select name="services"><option value="pickup">Flight Pickup</option><option value="hosting">Hosting</option><option value="translation">Translation</option><option value="other">Other</option></select>Location:
-                                            <select name="location">
-                                                <option value="durham">Durham</option>
-                                                <option value="raleigh">Raleigh</option>
-                                                <option value="chapel">Chapel Hill</option>
-                                                <option value="other">Other</option>
-                                                </select>
-                                            <br><br> From: <select name="time1"><option value="one">1 PM</option><option value="two">2 PM</option><option value="three">3 PM</option><option value="four">4 PM</option></select>                                            To: <select name="time2"><option value="one">1 PM</option><option value="two">2 PM</option><option value="three">3 PM</option><option value="four">4 PM</option></select>
-                                            <br><br> <textarea name="message" rows="10" cols="30">Type any additional notes here.</textarea><br><br>Once
-                                            this reservation has been submitted, you will be contacted within 1-2 business
-                                            days by email about service availability.<br><br><input type="submit" class="buttonFloat"></p>
-
-                                    </div>
-                                </div>
+                                <span style="font-size: 18px;">Main time:</span>
+                                <p class="break-word text-indent">
+                                    Mon,Tues,Thurs,Weekends
+                                </p>
+                            </div>
+                            <div class="col detail-profile-item-text">
+                                <span style="font-size: 18px;margin-top: 7vh;">Facebook:</span>
+                                <p class="break-word text-indent">
+                                    jasonli@facebook.com
+                                </p>
+                                <span style="font-size: 18px;">Email:</span>
+                                <p class="break-word text-indent">
+                                    jasonli@gmail.com
+                                </p>
+                                <button class="btn btn-primary rsvp-btn-listview" data-toggle="modal" data-target="#rsvp-modal">Quick rsvp</button>
                             </div>
 
                         </div>
-
-                        <div href="#" class="item">
-                            <div class="item-pic">
-                                <img src="img/a5.svg" class="img-circle" />
-                            </div>
-                            <div class="item-desc">
-                                <p><b>Team D</b><br>Main services:<br>
-                                    <div class="soc">flight pickup, hosting translation <br> phone, utility, SSN translation <br> phone, utility,
-                                        SSN translation </div>
+                        <div class="row list-item-border">
+                            <a href="detailview.html">
+                                <div class="col detail-profile-item">
+                                    <img src="img/a3.svg" />
+                                </div>
+                            </a>
+                            <div class="col detail-profile-item-text">
+                                <h3 style="margin-bottom: 4vh;margin-top: -8vh;">Team B</h3>
+                                <span style="font-size: 18px;">Main service:</span>
+                                <p class="break-word text-indent">
+                                    phone, translation
                                 </p>
                             </div>
-                            <button id="modBt4" class="buttonFloat"> Quick RSVP</button>
-
-                            <div id="myMod4" class="modal">
-                                <div class="modal-content">
-                                    <span class="close4">&times;</span>
-                                    <p><br>Reserve your team
-                                        <br><br> First Name: <input type="text" name="firstname"> Last Name: <input type="text"
-                                            name="lastname"><br><br> Email: <input type="text" name="email"> Phone Number:
-                                        <input type="text" name="number"><br><br>Service Requested: <select name="services"><option value="pickup">Flight Pickup</option><option value="hosting">Hosting</option><option value="translation">Translation</option><option value="other">Other</option></select>Location:
-                                        <select name="location">
-                                                <option value="durham">Durham</option>
-                                                <option value="raleigh">Raleigh</option>
-                                                <option value="chapel">Chapel Hill</option>
-                                                <option value="other">Other</option>
-                                                </select>
-                                        <br><br> From: <select name="time1"><option value="one">1 PM</option><option value="two">2 PM</option><option value="three">3 PM</option><option value="four">4 PM</option></select>                                        To: <select name="time2"><option value="one">1 PM</option><option value="two">2 PM</option><option value="three">3 PM</option><option value="four">4 PM</option></select>
-                                        <br><br> <textarea name="message" rows="10" cols="30">Type any additional notes here.</textarea><br><br>Once
-                                        this reservation has been submitted, you will be contacted within 1-2 business days
-                                        by email about service availability.<br><br><input type="submit" class="buttonFloat"></p>
-                                </div>
+                            <div class="col detail-profile-item-text">
+                                <span style="font-size: 18px;margin-top: 7vh;">Main areas:</span>
+                                <p class="break-word text-indent">
+                                    Cary, Raleigh
+                                </p>
+                                <span style="font-size: 18px;">Main time:</span>
+                                <p class="break-word text-indent">
+                                    Mon,Tues,Weekends
+                                </p>
                             </div>
+                            <div class="col detail-profile-item-text">
+                                <span style="font-size: 18px;margin-top: 7vh;">Facebook:</span>
+                                <p class="break-word text-indent">
+                                    teamb@facebook.com
+                                </p>
+                                <span style="font-size: 18px;">Email:</span>
+                                <p class="break-word text-indent">
+                                    teamb@gmail.com
+                                </p>
+                                <button class="btn btn-primary rsvp-btn-listview">Quick rsvp</button>
+                            </div>
+
                         </div>
+                        <div class="row list-item-border">
+                            <a href="detailview.html">
+                                <div class="col detail-profile-item">
+                                    <img src="img/a4.svg" />
+                                </div>
+                            </a>
+                            <div class="col detail-profile-item-text">
+                                <h3 style="margin-bottom: 4vh;margin-top: -8vh;">Team C</h3>
+                                <span style="font-size: 18px;">Main service:</span>
+                                <p class="break-word text-indent">
+                                    phone, translation, pickup
+                                </p>
+                            </div>
+                            <div class="col detail-profile-item-text">
+                                <span style="font-size: 18px;margin-top: 7vh;">Main areas:</span>
+                                <p class="break-word text-indent">
+                                    Raleigh
+                                </p>
+                                <span style="font-size: 18px;">Main time:</span>
+                                <p class="break-word text-indent">
+                                    Weekends
+                                </p>
+                            </div>
+                            <div class="col detail-profile-item-text">
+                                <span style="font-size: 18px;margin-top: 7vh;">Facebook:</span>
+                                <p class="break-word text-indent">
+                                    teamc@facebook.com
+                                </p>
+                                <span style="font-size: 18px;">Email:</span>
+                                <p class="break-word text-indent">
+                                    teamc@gmail.com
+                                </p>
+                                <button class="btn btn-primary rsvp-btn-listview">Quick rsvp</button>
+                            </div>
+
+                        </div>
+                        <div class="row list-item-border">
+                            <a href="detailview.html">
+                                <div class="col detail-profile-item">
+                                    <img src="img/a5.svg" />
+                                </div>
+                            </a>
+                            <div class="col detail-profile-item-text">
+                                <h3 style="margin-bottom: 4vh;margin-top: -8vh;">Team D</h3>
+                                <span style="font-size: 18px;">Main service:</span>
+                                <p class="break-word text-indent">
+                                    phone, translation
+                                </p>
+                            </div>
+                            <div class="col detail-profile-item-text">
+                                <span style="font-size: 18px;margin-top: 7vh;">Main areas:</span>
+                                <p class="break-word text-indent">
+                                    Cary
+                                </p>
+                                <span style="font-size: 18px;">Main time:</span>
+                                <p class="break-word text-indent">
+                                    Mon,Tues,Weekends
+                                </p>
+                            </div>
+                            <div class="col detail-profile-item-text">
+                                <span style="font-size: 18px;margin-top: 7vh;">Facebook:</span>
+                                <p class="break-word text-indent">
+                                    teamD@facebook.com
+                                </p>
+                                <span style="font-size: 18px;">Email:</span>
+                                <p class="break-word text-indent">
+                                    teamD@gmail.com
+                                </p>
+                                <button class="btn btn-primary rsvp-btn-listview">Quick rsvp</button>
+                            </div>
+
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -233,17 +247,83 @@
             </div>
         </div>
 
+
+
+
+
+        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Reserve your team</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 rsvp-form-padding">
+                                <input type="text" name="firstname" placeholder="First Name" class="form-control">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 rsvp-form-end-padding">
+                                <input type="text" name="lastname" placeholder="Last Name" class="form-control">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 rsvp-form-padding">
+                                <input type="text" name="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 rsvp-form-end-padding">
+                                <input type="text " name="number" placeholder="Phone Number" class="form-control">
+
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 rsvp-form-padding">
+                                <select name="services
+                                    " class="form-control"><option value="service requested">Service Requested</option><option value="pickup ">Flight Pickup</option><option value="hosting ">Hosting</option><option value="translation
+                                    ">Translation</option><option value="other ">Other</option></select>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 rsvp-form-end-padding">
+                                <select name="location " class="form-control">                   
+                                    <option value="location">Location</option>
+                                    <option value="durham ">Durham</option>
+                                    <option value="raleigh ">Raleigh</option>
+                                    <option value="chapel ">Chapel Hill</option>
+                                    <option value="other ">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 rsvp-form-padding">
+                                <select name="time1" class="form-control"><option value="from">FROM</option><option value="one
+                                        ">1 PM</option><option value="two ">2 PM</option><option value="three ">3 PM</option><option value="four
+                                        ">4 PM</option></select>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 rsvp-form-end-padding">
+                                <select name="time2 " class="form-control"><option value="to">TO</option><option value="one">1 PM</option><option value="two ">2 PM</option><option value="three
+                                ">3 PM</option><option value="four">4 PM</option></select>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 1vh; margin-bottom: 1vh;">
+                                <textarea name="message " rows="10 " cols="30 " placeholder="Type any additional notes here." class="form-control"></textarea>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: right;">
+                                Once this reservation has been submitted, you will be contacted within 1-2 business days by email about service availability.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-            crossorigin="anonymous"></script>
-        <script src="js/usettler.js"></script>
-        <script src="https://use.fontawesome.com/fb33c896ee.js"></script>
-        <script src="js/lj.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+            crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh "
+            crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ "
+            crossorigin="anonymous "></script>
+        <script src="js/usettler.js "></script>
+        <script src="https://use.fontawesome.com/fb33c896ee.js "></script>
+        <script src="js/lj.js "></script>
 
 
 </body>
