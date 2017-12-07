@@ -147,12 +147,8 @@ html,body {
       
       background-image: linear-gradient(to bottom, #ffffff 0%, #ededed 100%);
       border-radius: 0;
-      border: solid 1px black;
+      border: none;
       color: #17252A;
-      /* display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row; */
   }
   .map-list .list-group-item .map-list-item-main {
       float: left;
