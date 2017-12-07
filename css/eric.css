@@ -56,16 +56,17 @@ ul {
     justify-content: center;
     flex-direction: row;
     word-break: break-word;
+    
 }
 .account-card-profile {
     width: 30vw;
     height: 70vh;
-    background-color: #CCEA8D;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     border: 1px solid black;
+    border-left: none;
 }
 .account-card-profile-avatar img {
     margin-top: 5vh;
@@ -78,13 +79,17 @@ ul {
     height: 70vh;
     display: flex;
     border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    
 }
+
 .account-card-profile-avatar {
     margin-top: 1vw;
     width: 20vw;
     min-height: 26vh;
    
-    background-color: darkgray;
+    
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -97,7 +102,7 @@ ul {
     width: 30vw;
     min-height: 27vh;
     max-height: 36vh;
-    background-color: #C1BABA;
+    
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -105,6 +110,8 @@ ul {
     padding-top: 1.5vh;
     padding-bottom: 1vw;
     border: 1px solid black;
+    border-left: none;
+    border-bottom: none;
 }
 .account-card-profile-activity > * {
     margin-left: 4vw;
@@ -145,5 +152,36 @@ ul {
 }
 .account-footer-txt {
     font-size: 2vh;
+    background-image: -ms-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: -moz-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: -o-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #f8ffe8), color-stop(100, #9FD1A6));
+    
+    background-image: -webkit-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: linear-gradient(to bottom left, #f8ffe8 0%, #9FD1A6 100%);
+}
+.accountview-container {
+    max-width: calc(100vw - 8vh);
+    margin: 4vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#ac-header-bg-color {
+    color: #F8F5F5;
+    
+    background-image: -ms-linear-gradient(bottom right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: -moz-linear-gradient(bottom right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: -o-linear-gradient(bottom right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #f8ffe8), color-stop(100, #9FD1A6));
+    
+    background-image: -webkit-linear-gradient(bottom right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: linear-gradient(to top left, #f8ffe8 0%, #9FD1A6 100%);
+}
