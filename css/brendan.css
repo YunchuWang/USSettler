@@ -1,3 +1,33 @@
+@media only screen and (max-width: 500px) {
+    .detail-profile-item {
+        background-color: #E7C6AE;
+        height: 40vh;
+        max-width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .detail-profile-item img {
+        max-width: 65%;
+        max-height: 65%;
+        border-radius: 50%;
+    }
+    .detail-profile-item-text {
+        background-color: #E7C6AE;
+        height: 40vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        word-break: break-word;
+    }
+    .MultiCarousel {
+        display: none;
+    }
+
+    
+}
 .detail-container {
     min-height: 100vh;
     background-color: #ECD3EF;
@@ -50,6 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 80vw;
 }
 .detail-profile-item img {
     max-width: 65%;

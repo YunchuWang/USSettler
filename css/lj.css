@@ -1,5 +1,15 @@
 
-
+@media only screen and (max-width: 500px) {
+    .rsvp-btn-listview {
+        display: none;
+    }
+    .rsvp-btn-listview-top {
+        display: inline !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
 .main-list {
     height: calc(84vh - 2em);
     width: 75vw;
@@ -22,10 +32,7 @@
     background-color: #DEF2F1;
     border: 1px solid black;
     color: #17252A;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    
 }
 
 .rsvp-btn-listview {
@@ -38,7 +45,9 @@
     display: none; 
 
 }
-
+.rsvp-btn-listview-top {
+    display: none;
+}
 .soc {
     padding-left: 5em;
 }

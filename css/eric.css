@@ -39,16 +39,23 @@ ul {
     height: 39vh;
     width: 100vw;
 }
+#uss-jointeam-content h1 {
+    font-size: 6vh;
+}
+#uss-jointeam-content h2 {
+    font-size: 4vh;
+}
 .breadcrumb-item {
     font-size: 28px;
 }
 .account-card-block {
-    width: 100vw;
+    max-width: 100vw;
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    word-break: break-word;
 }
 .account-card-profile {
     width: 30vw;
@@ -66,17 +73,17 @@ ul {
     max-height: 75%;
 }
 .account-card-information {
+    overflow-y: scroll;
     width: 70vw;
     height: 70vh;
-    background-color: cornsilk;
     display: flex;
-    
     border: 1px solid black;
 }
 .account-card-profile-avatar {
     margin-top: 1vw;
     width: 20vw;
     min-height: 26vh;
+   
     background-color: darkgray;
     display: flex;
     align-items: center;
@@ -103,10 +110,11 @@ ul {
     margin-left: 4vw;
 }
 .account-card-information .card {
-    width: 70vw;
+    width: 100%;
     border: none;
     border-radius: 0;
     max-height: 70vh;
+    
 }
 .account-card-information .card .list-group > .list-group-item {
     min-height: 15vh;
@@ -129,3 +137,13 @@ ul {
     justify-content: flex-start;
     flex-direction: row;
 }
+.account-card-title {
+    font-size: 3.5vh;
+}
+.account-card-txt {
+    font-size: 2.3vh;
+}
+.account-footer-txt {
+    font-size: 2vh;
+}
+

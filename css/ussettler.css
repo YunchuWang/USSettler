@@ -1,3 +1,12 @@
+@media only screen and (max-width: 500px) {
+    #nav-spacer {
+        display: none !important;
+    }
+    .detail-hidden {
+        display: none !important;
+    }
+    
+}
 html,body{ 
     margin:0;
     padding:0;
@@ -31,11 +40,9 @@ img {
     height: 9vh;
     background-color: #d8c3a5;
 }
-#ussnav ul {
-    list-style-type: none;
+#ussnav > div {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -43,88 +50,98 @@ img {
     height: 100%;
     width: 100vw;
 }
-
-#ussnav ul li {
+#ussnav > div > div {
     height: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-#ussnav ul li:first-child {
-    width: 8vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#ussnav-logo {
+    padding-left: 1vw;
+    background-color: red;
+    height: 9vh;
 }
-#ussnav ul li:first-child img {
+#ussnav-logo img {
     margin-top: .3vh;
     height: 6.5vh;
   }
 #nav-spacer {
-    flex: 10;
+    background-color: seagreen;
+}
+#nav-spacer-2 {
+    background-color: seagreen;
 }
 #profile-section {
-    min-width: 7vw;
+    
+    
+    background-color: #BC91A9;
 }
 #socialicons-nav {
     height: 9vh;
-    margin-right: 2vw;
     /* background-color: darksalmon; */
-    align-self: flex-start;
+    
+    background-color: seashell;
 }
 #socialicons-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-right: 1vw;
+    
     overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 18vw;
+    width: 100%;
     height: 100%;
 }
 
 #socialicons-nav ul i {
     margin-right: .5vw;
 }
-#profile-section img {
-    height: 7vh;
-    width: 7vh;
+#profile-section .card .card-body img {
+    height: 6vh;
+    width: 6vh;
     border-radius: 2em;
   }
 
-#ussnav ul li:last-child button{
+#nav-setting {
+    margin-left: 1vw;
+}
+#nav-setting button{
     background-color: transparent !important;
-    margin-right: 1vw;
     border: none;
     width: 3.5vw;
     height: 3.5vw;
     border-radius: 50%;
-    
+    display: flex;align-items: center;justify-content: center;
   }
-  #ussnav ul li:last-child button:hover {
+  #nav-setting button:hover {
     background-color: #ECE6E6 !important;
     width: 3.5vw;
     height: 3.5vw;
     border-radius: 50%;
   }
   #profile-section .card {
-      background-color: transparent !important;
-      border: 0 !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      color: #3c493f;
+    background-color: transparent !important;
+    border: 0 !important;
+    margin: 0;
+    background-color: skyblue;
+    padding: 0 !important;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #3c493f;
+    width: 100%;
       
   }
   #profile-section .card .card-body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Roboto Condensed', sans-serif;
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 .nopadding {
     padding: 0;
@@ -132,9 +149,11 @@ img {
 
 .ussbody {
     min-height: 84vh;
-    background-color: #F8FFFC;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 #usssocialicons {
     height: 8vh;
@@ -160,16 +179,17 @@ img {
 }
 #searchbar-nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     height: 9vh;
-    width: 30vw;
+    padding-left: 10vw;
+    background-color: salmon;
 }
 #searchbar-nav .input-group {
-    margin-left: 25vw;
-    width: 80%;
+    width: 100%;
 }
+
 #usssearchbar {
     display: flex;
     flex-direction: column;
@@ -182,19 +202,19 @@ img {
     max-width: 50%;
 }
 #nav-switch{
-    width: 10vw;
     height: 9vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 3vw;
+    
 }
 #nav-switch .btn-group button {
     color: black;
+    width: 4vw;
     background-color: white;
     border: 1px solid black;
-    padding-left: 1em;
-    padding-right: 1em;
+    font-size: 1vw !important;
+    
 }
 #nav-switch .btn-group button:hover {
     color: #534D4D;
@@ -213,6 +233,11 @@ img {
     align-items: center;
     justify-content: center;
 }
+#profile-setting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .footerlist {
     list-style-type: none;
     margin: 0;
@@ -224,7 +249,7 @@ img {
     align-items: center;
     height: 100%;
     min-width: 65vw;
-    font-size: 1em;
+    font-size: 2vh;
 }
 .footerlist > li:last-child {
     display: flex;
@@ -316,3 +341,19 @@ button:focus {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
   }
+  #search-logo {
+    margin-bottom: 12vh;color: #3B3738;text-shadow: 2px 2px 9px; letter-spacing: 1px;
+    font-size: 5vh;
+  }
+  .nav-profile-txt {
+      font-size: 1vw;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .social-icon-size {
+      font-size: 2vw;
+  }
+ 
+
+

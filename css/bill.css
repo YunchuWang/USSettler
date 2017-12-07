@@ -107,9 +107,9 @@ html,body {
     background-color: #f0f7f4;
     display: flex;
     flex-direction: row;
+    
   }
   .map-list {
-      width: 24.2vw;
       min-height : 100%;
       background-color: #F2F2F2;
       border-right: 1px solid black;
@@ -120,7 +120,6 @@ html,body {
 }
 
   .map-content {
-      width: 85.8vw;
       height: 100%;
       background-color: #FFFFFF;
   }
@@ -185,4 +184,13 @@ html,body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.map-view-container {
+    width: 100vw !important;
+}
+.map-list-item-main p {
+  font-size: 2.1vh;
+}
+.map-list-item-serv p {
+  font-size: 2.1vh;
 }
