@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>US Settler Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/ussettler.css">
+    <link rel="stylesheet" type="text/css" href="css/bill.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="ussnav" class="col-12 col-md-12 nopadding">
+                <div class="row nopadding">
+                    <div id="ussnav-logo" class="col-1 col-md-1 col-sm-1 col-lg-1 col-xl-1">
+                        <a href="index.html"><img src="img/ussettler.png" /></a>
+                    </div>
+                    <div class="col-8 col-md-8 col-sm-8 col-lg-8 col-xl-8" id="nav-spacer2">
+
+                    </div>
+                    <div class="col-3 col-md-3 col-sm-3 col-lg-3 col-xl-3" id="profile-section">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="accountview.html" class="hvr-fade" style="height: 9vh; display:flex; align-items: center; justify-content: center; padding-left: .5vw; padding-right: .5vw;">
+                                                        <img src="img/profileimg.png" style="margin-right: .5vw;"/>
+                                                        <span class="nav-profile-txt">Tom Cat</span>
+                                                        </a>
+                                <div id="nav-setting">
+                                    <a href="login.html" style="text-decoration: none; color: #423D3D;display: flex;align-items: center;justify-content: center;">
+                                                                    <button class="btn btn-light">
+                                                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row nopadding">
+            <div class="ussbody col-12 col-md-12 nopadding container-fluid">
+                <div id="usssocialicons">
+                    <ul>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-weixin fa-2x" style="color: #7bb32e;font-size:4.5vh;" aria-hidden="true"></i></a>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-facebook-square fa-2x" style="color: #3b5998;font-size:4.5vh;" aria-hidden="true"></i></a>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-linkedin-square fa-2x" style="color: #cd486b;font-size:4.5vh;" aria-hidden="true"></i></a>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-twitter-square fa-2x"  style="color: #1dcaff;font-size:4.5vh;"aria-hidden="true"></i></a>
+                        <a href="#" class="hvr-pulse"><i class="fa fa-instagram fa-2x" style="color: #0077B5;font-size:4.5vh;" aria-hidden="true"></i></a>
+                    </ul>
+                </div>
+                <div id="usssearchbar">
+                    <h1 id="search-logo">Best place to help immigrants find settlement teams!</h1>
+
+                    <form class="input-group" name="search-form" onsubmit="submitForm()">
+                        <input type="text" class="form-control" name="location" onkeyup="typeForm()" autofocus="autofocus" placeholder="Type your moving in address to start a search">
+                        <span class="input-group-addon" style="display: none;">
+                            <button type="button">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </form>
+                    <div id="search-alert" class="alert alert-warning" role="alert" style="position:absolute;top: 48vh; left: 25vw;display:none;">
+                        <strong>Location must be filled out</strong>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="ussfooter" class="col-12 col-md-12 nopadding">
+                <ul class="footerlist">
+                    <li>USSettler@2017</li>
+                    |
+                    <li>Disclaimer</li>
+                    |
+                    <li>Privacy Policy</li>
+                    |
+                    <li><a href="jointeam.html" class="footer-link-color">Join our team</a></li>
+                    <li style="list-style: none">|</li>
+                    <li><a href="contact.html" class="footer-link-color">Contact us</a></li>
+                    |
+                    <li>
+                        <span>Sign up our updates</span>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="basic-addon2">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="js/usettler.js"></script>
+    <script src="https://use.fontawesome.com/fb33c896ee.js"></script>
+</body>
+
+</html>
