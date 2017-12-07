@@ -30,6 +30,7 @@ html,body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -61,7 +62,7 @@ html,body {
     font-size: 14px;
   }
   .form input[type=submit] {
-    font-family: "Roboto", sans-serif;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
     text-transform: uppercase;
     outline: 0;
     background: #4CAF50;
@@ -114,6 +115,7 @@ html,body {
       background-color: #F2F2F2;
       border-right: 1px solid black;
       overflow-y: scroll;
+      Font-Family: 'Cabin', Sans-Serif;
   }
   .map-list::-webkit-scrollbar { 
     display: none; 
@@ -190,6 +192,7 @@ html,body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    Font-Family: 'Cabin', Sans-Serif;
 }
 .map-view-container {
     width: 100vw !important;

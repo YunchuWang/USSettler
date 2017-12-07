@@ -38,12 +38,15 @@ ul {
     justify-content: flex-end;
     height: 39vh;
     width: 100vw;
+    
 }
 #uss-jointeam-content h1 {
     font-size: 6vh;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 #uss-jointeam-content h2 {
     font-size: 4vh;
+    Font-Family: 'Cabin', Sans-Serif;
 }
 .breadcrumb-item {
     font-size: 28px;
@@ -56,7 +59,7 @@ ul {
     justify-content: center;
     flex-direction: row;
     word-break: break-word;
-    
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 .account-card-profile {
     width: 30vw;
@@ -163,6 +166,8 @@ ul {
     background-image: -webkit-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
     
     background-image: linear-gradient(to bottom left, #f8ffe8 0%, #9FD1A6 100%);
+    color: #514F4F !important;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 .accountview-container {
     max-width: calc(100vw - 8vh);

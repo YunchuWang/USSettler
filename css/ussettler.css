@@ -42,6 +42,7 @@ img {
     -webkit-box-shadow: inset 0px -5px 16px -1px rgba(0,0,0,0.29);
     -moz-box-shadow: inset 0px -5px 16px -1px rgba(0,0,0,0.29);
     box-shadow: inset 0px -5px 16px -1px rgba(0,0,0,0.29);
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 #ussnav > div {
     margin: 0;
@@ -193,6 +194,7 @@ img {
     justify-content: flex-end;
     height: 37vh;
     width: 100vw;
+    Font-Family: 'Cabin', Sans-Serif;
 }
 #usssearchbar .input-group {
     max-width: 50%;
@@ -232,6 +234,7 @@ img {
     -webkit-box-shadow: inset 0px 5px 28px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 5px 28px -4px rgba(0,0,0,0.75);
     box-shadow: inset 0px 5px 28px -4px rgba(0,0,0,0.75);
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 #profile-setting {
     display: flex;
@@ -345,7 +348,7 @@ button:focus {
     margin-bottom: 12vh;color: #726B65;letter-spacing: 1px;
     font-size: 5vh;
     font-weight: 900;
-   
+    Font-Family: 'Roboto Condensed', Sans-Serif;
   }
   .nav-profile-txt {
       font-size: 1vw;
