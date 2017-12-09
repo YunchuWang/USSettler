@@ -172,7 +172,19 @@ ul {
 .accountview-container {
     max-width: calc(100vw - 8vh);
     margin: 4vh;
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: -ms-linear-gradient(bottom right, #ABFFEE 0%, #F7FFE0 100%) !important;
+    
+    background-image: -moz-linear-gradient(bottom right, #ABFFEE 0%, #F7FFE0 100%) !important;
+    
+    background-image: -o-linear-gradient(bottom right, #ABFFEE 0%, #F7FFE0 100%) !important;
+    
+    background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #ABFFEE), color-stop(100, #F7FFE0)) !important;
+    
+    background-image: -webkit-linear-gradient(bottom right, #ABFFEE 0%, #F7FFE0 100%) !important;
+    
+    background-image: linear-gradient(to top left, #ABFFEE 0%, #F7FFE0 100%) !important;
 }
 
 #ac-header-bg-color {
