@@ -27,17 +27,17 @@ html,body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: -ms-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
+    background-image: -ms-linear-gradient(bottom left, #ABFFEE 0%, #BFEFE9 50%, #F7FFE0 100%);
     
-    background-image: -moz-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
+    background-image: -moz-linear-gradient(bottom left, #ABFFEE 0%, #BFEFE9 50%, #F7FFE0 100%);
     
-    background-image: -o-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
+    background-image: -o-linear-gradient(bottom left, #ABFFEE 0%, #BFEFE9 50%, #F7FFE0 100%);
     
-    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #cfe7fa), color-stop(100, #F7FFE0));
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ABFFEE), color-stop(50, #BFEFE9), color-stop(100, #F7FFE0));
     
-    background-image: -webkit-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
+    background-image: -webkit-linear-gradient(bottom left, #ABFFEE 0%, #BFEFE9 50%, #F7FFE0 100%);
     
-    background-image: linear-gradient(to bottom left, #cfe7fa 0%, #F7FFE0 100%);
+    background-image: linear-gradient(to top right, #ABFFEE 0%, #BFEFE9 50%, #F7FFE0 100%);
 }
 .stretch {
     width:100%;
