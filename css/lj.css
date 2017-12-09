@@ -13,7 +13,17 @@
 .main-list {
     height: calc(84vh - 2em);
     width: 75vw;
-    background-color: #f0f7f4;
+    background-image: -ms-linear-gradient(bottom left, #ffffff 0%, #9FD1A6 100%);
+    
+    background-image: -moz-linear-gradient(bottom left, #ffffff 0%, #9FD1A6 100%);
+    
+    background-image: -o-linear-gradient(bottom left, #ffffff 0%, #9FD1A6 100%);
+    
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ffffff), color-stop(100, #9FD1A6));
+    
+    background-image: -webkit-linear-gradient(bottom left, #ffffff 0%, #9FD1A6 100%);
+    
+    background-image: linear-gradient(to top right, #ffffff 0%, #9FD1A6 100%);
     border: 1px solid black;
     overflow-y: scroll;
     margin: auto;
