@@ -150,17 +150,7 @@ img {
     flex-direction: column;
     max-width: 100vw;
     overflow-x: hidden;
-    background-image: -ms-linear-gradient(bottom left, #9E1B35 0%, #E6E61C 100%);
-    
-    background-image: -moz-linear-gradient(bottom left, #9E1B35 0%, #E6E61C 100%);
-    
-    background-image: -o-linear-gradient(bottom left, #9E1B35 0%, #E6E61C 100%);
-    
-    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #9E1B35), color-stop(100, #E6E61C));
-    
-    background-image: -webkit-linear-gradient(bottom left, #9E1B35 0%, #E6E61C 100%);
-    
-    background-image: linear-gradient(to top right, #9E1B35 0%, #E6E61C 100%);
+    background-color: #f7ffe0;
 
 
 }
@@ -357,7 +347,7 @@ button:focus {
   }
   #search-logo {
     margin-bottom: 12vh;color: #726B65;letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);font-weight: 700; color: white;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);font-weight: 700; 
     font-size: 5vh;
     font-weight: 900;
     Font-Family: 'Roboto Condensed', Sans-Serif;
@@ -376,17 +366,7 @@ button:focus {
       color: white !important;
   }
   .bg-color {
-    background-image: -ms-linear-gradient(top left, #9E5018 0%, #E6E61C 100%);
-    
-    background-image: -moz-linear-gradient(top left, #9E5018 0%, #E6E61C 100%);
-    
-    background-image: -o-linear-gradient(top left, #9E5018 0%, #E6E61C 100%);
-    
-    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #9E5018), color-stop(100, #E6E61C));
-    
-    background-image: -webkit-linear-gradient(top left, #9E5018 0%, #E6E61C 100%);
-    
-    background-image: linear-gradient(to bottom right, #9E5018 0%, #E6E61C 100%);
+    background-color: #f7ffe0;
 
   }
  
