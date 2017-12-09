@@ -69,11 +69,11 @@ img {
     height: 6.5vh;
   }
 #nav-spacer {
+
 }
 #nav-spacer-2 {
 }
 #profile-section {
-    
     
 }
 #socialicons-nav {
@@ -349,6 +349,7 @@ button:focus {
     font-size: 5vh;
     font-weight: 900;
     Font-Family: 'Roboto Condensed', Sans-Serif;
+    
   }
   .nav-profile-txt {
       font-size: 1vw;

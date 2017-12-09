@@ -13,6 +13,32 @@ html,body {
     top: 0px; 
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
   }
+#login-logo-txt {
+    text-align: center;
+    margin-bottom: 3.8vh;
+}
+#login-container {
+  
+    opacity: .9;
+    min-width: 30vw;
+    min-height: 60vh;
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: -ms-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: -moz-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: -o-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #f8ffe8), color-stop(100, #9FD1A6));
+    
+    background-image: -webkit-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    
+    background-image: linear-gradient(to bottom left, #f8ffe8 0%, #9FD1A6 100%);
+}
 .stretch {
     width:100%;
     height:100%;
@@ -27,25 +53,20 @@ html,body {
     z-index: 2; 
     background-color: rgba(255, 255, 255, 0.50);
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     
 }
 
 
   
-.login-page {
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
-  }
+
   .form {
-    position: relative;
+    margin: 0;
     z-index: 1;
     background: #FFFFFF;
     max-width: 360px;
-    margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
