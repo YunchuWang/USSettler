@@ -27,17 +27,17 @@ html,body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: -ms-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    background-image: -ms-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
     
-    background-image: -moz-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    background-image: -moz-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
     
-    background-image: -o-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    background-image: -o-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
     
-    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #f8ffe8), color-stop(100, #9FD1A6));
+    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #cfe7fa), color-stop(100, #F7FFE0));
     
-    background-image: -webkit-linear-gradient(top right, #f8ffe8 0%, #9FD1A6 100%);
+    background-image: -webkit-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
     
-    background-image: linear-gradient(to bottom left, #f8ffe8 0%, #9FD1A6 100%);
+    background-image: linear-gradient(to bottom left, #cfe7fa 0%, #F7FFE0 100%);
 }
 .stretch {
     width:100%;
@@ -208,7 +208,17 @@ html,body {
 }
 .ussbody-two {
     min-height: 84vh;
-    background-color: #f7ffe0;
+    background-image: -ms-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
+    
+    background-image: -moz-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
+    
+    background-image: -o-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
+    
+    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #cfe7fa), color-stop(100, #F7FFE0));
+    
+    background-image: -webkit-linear-gradient(top right, #cfe7fa 0%, #F7FFE0 100%);
+    
+    background-image: linear-gradient(to bottom left, #cfe7fa 0%, #F7FFE0 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;

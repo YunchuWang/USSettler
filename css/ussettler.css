@@ -146,7 +146,17 @@ img {
 
 .ussbody {
     min-height: 84vh;
-    background-color: #f7ffe0;
+    background-image: -ms-linear-gradient(top left, #cfe7fa 0%, #F7FFE0 100%);
+    
+    background-image: -moz-linear-gradient(top left, #cfe7fa 0%, #F7FFE0 100%);
+    
+    background-image: -o-linear-gradient(top left, #cfe7fa 0%, #F7FFE0 100%);
+    
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #cfe7fa), color-stop(100, #F7FFE0));
+    
+    background-image: -webkit-linear-gradient(top left, #cfe7fa 0%, #F7FFE0 100%);
+    
+    background-image: linear-gradient(to bottom right, #cfe7fa 0%, #F7FFE0 100%);
     display: flex;
     flex-direction: column;
     max-width: 100vw;
@@ -364,7 +374,17 @@ button:focus {
       color: white !important;
   }
   .bg-color {
-      background-color: #f7ffe0 !important;
+    background-image: -ms-linear-gradient(top left, #D1FFFD 0%, #F7FFE0 100%);
+    
+    background-image: -moz-linear-gradient(top left, #D1FFFD 0%, #F7FFE0 100%);
+    
+    background-image: -o-linear-gradient(top left, #D1FFFD 0%, #F7FFE0 100%);
+    
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #D1FFFD), color-stop(100, #F7FFE0));
+    
+    background-image: -webkit-linear-gradient(top left, #D1FFFD 0%, #F7FFE0 100%);
+    
+    background-image: linear-gradient(to bottom right, #D1FFFD 0%, #F7FFE0 100%);
   }
  
 
